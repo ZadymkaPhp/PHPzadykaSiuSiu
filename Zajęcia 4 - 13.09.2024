@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+   
+  <h1>ZAJĘCIA</h1>
+</header> 
+<main>
+<h2>zadanie </h2>
+
+
+<?php
+
+//  tablic asocjacyjnej
+$miasta = [
+    "Warszawa" => 1793579,
+    "Kraków" => 779966,
+    "Łódź" => 690422,
+    "Wrocław" => 672268
+];
+
+
+echo "Tablica miast i liczby mieszkańców:<br>";
+print_r($miasta);
+
+
+echo "<br>Zawartość tablicy:<br>";
+foreach ($miasta as $miasto => $mieszkaniec) {
+    echo "Miasto o nazwie $miasto zamieszkiwane jest przez $mieszkaniec mieszkańców.<br>";
+}
+
+
+
+
+function sprawdzLiczbe($liczba) {
+    if ($liczba > 7) {
+        echo "Podana liczba jest większa od 7.<br>";
+    } else {
+        echo "Podana liczba jest mniejsza lub równa 7.<br>";
+    }
+}
+
+
+sprawdzLiczbe(10);
+
+?>
+</main>
+</body>
+</html> 
