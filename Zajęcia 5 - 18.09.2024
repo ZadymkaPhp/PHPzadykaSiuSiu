@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operations in PHP</title>
+</head>
+<body>
+    <h1> PHP</h1>
+    
+
+
+
+
+
+    <?php
+    // 1. Wartość liczby PI
+    $pi = M_PI;
+    echo "<p>Wartość liczby PI: " . $pi . "</p>";
+
+    // 2. Wybór największej wartości
+    $numbers = [10, 25, 5, 30, 15];
+    $maxValue = max($numbers);
+    echo "<p>Największa wartość: " . $maxValue . "</p>";
+
+    // 3. Wyświetlenie najmniejszej wartości
+    $minValue = min($numbers);
+    echo "<p>Najmniejsza wartość: " . $minValue . "</p>";
+
+    // 4. Zaokrąglenie do 3 miejsc po przecinku (liczby PI)
+    $roundedPi = round($pi, 3);
+    echo "<p>Zaokrąglona wartość liczby PI do 3 miejsc po przecinku: " . $roundedPi . "</p>";
+
+    // 5. Wyświetlenie liczby ujemnej
+    $negativeNumber = -42;
+    echo "<p>Liczba ujemna: " . $negativeNumber . "</p>";
+
+    // 6. Wyświetlenie wartości bezwzględnej liczby ujemnej
+    $absoluteValue = abs($negativeNumber);
+    echo "<p>Wartość bezwzględna liczby ujemnej: " . $absoluteValue . "</p>";
+
+    // 7. Pierwiastek z liczby 144
+    $sqrtValue = sqrt(144);
+    echo "<p>Pierwiastek z liczby 144: " . $sqrtValue . "</p>";
+
+    // 8. Wylosowanie liczby z przedziału 50 do 120
+    $randomNumber = rand(50, 120);
+    echo "<p>Wylosowana liczba z przedziału 50 do 120: " . $randomNumber . "</p>";
+
+    // 9. Zaokrąglenie w dół liczby
+    $numberToFloor = 12.75;
+    $flooredValue = floor($numberToFloor);
+    echo "<p>Zaokrąglona w dół liczba 12.75: " . $flooredValue . "</p>";
+
+    // 10. Zaokrąglenie w górę liczby
+    $numberToCeil = 12.25;
+    $ceiledValue = ceil($numberToCeil);
+    echo "<p>Zaokrąglona w górę liczba 12.25: " . $ceiledValue . "</p>";
+    ?>
+</body>
+</html>
+
+</body>
+</html>
